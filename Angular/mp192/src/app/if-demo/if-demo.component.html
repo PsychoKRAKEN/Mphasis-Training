@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <h2>Product Details</h2>
+    <div class="row">
+      <div class="col-3">
+          <dl>
+              <dt>Name</dt>
+              <dd>{{product.Name}}</dd>
+              <dt>Price</dt>
+              <dd>{{product.Price}}</dd>
+          </dl>
+          <button (click)="TogglePreview()" class="btn btn-primary btn-sm btn-block">{{btnText}} Preview</button>
+      </div>
+      <div class="col-9">
+        <div *ngIf="showImage">
+            <img [src]="product.Photo" height="200" width="200" >
+         <------ getting input from the user./flipcard/amazon/dinamic
+                <img src="assets/shoes.jpg" height="200" width="200" > <-----static /hardcording the path.
+        </div>
+      </div>
+    </div>
+    </div>

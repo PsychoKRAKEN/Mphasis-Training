@@ -1,0 +1,33 @@
+<div>
+    My name is {{MyName}}<br />
+    My friends are {{appList[0]}}<br />
+    My friends are {{appList[1]}}<br />
+    My friends are {{appList[2]}}<br />
+    My friends are {{appList[3]}}<br />
+    </div><div>
+    My name is {{MyName}}<br />
+    My friends are {{appList[0]}}<br />
+    My friends are {{appList[1]}}<br />
+    My friends are {{appList[2]}}<br />
+    My friends are {{appList[3]}}<br />
+    </div>
+
+<p>Hello my name is {{name}}</p> 
+<p>Hello my email is {{email}}</p>
+<p>Hello my address is {{address.street}}  {{address.loc}} {{address.state}} {{address.city}}</p>
+ 
+<p><Button (click)="sayName()">Say my details</Button></p>
+<p><Button (click)="Details()">Say my details agian</Button></p> 
+
+<p><Button (click)="toggleHobbies()">{{showHobbies ? "Hide Hobbies" : "show  hobbies"}}</Button></p> 
+
+<div *ngIf="showHobbies"> 
+
+<h3>My Hobbies are </h3>{{hobbies}}
+<h3>My Daily Foods are </h3>
+<ul>
+<li *ngFor="let food of foods ; let i = index" >
+{{food}} <button (click)="deleteFood(i)">Delete</button>
+</li>
+</ul>
+</div> 

@@ -1,0 +1,47 @@
+
+<div id="mainid">
+
+  <div class="wrapper">
+
+    <div class="title">Register</div>
+    <form (ngSubmit)="onSubmit()">
+      <div class="field">
+        <input type="text" [(ngModel)]="student.fname" name="x1" required>
+        <label>Firstname</label>
+      </div>
+      <div class="field">
+        <input type="text" [(ngModel)]="student.lname" name="x2" required>
+        <label>Lastname</label>
+      </div>
+      <div class="field">
+        <input type="text" [(ngModel)]="student.rollno" name="x3" required>
+        <label>Roll No</label>
+      </div>
+      <div class="field">
+        <input type="text" [(ngModel)]="student.age" name="x4" required>
+        <label>Age</label>
+      </div>
+      <div class="field">
+        <input type="text" [(ngModel)]="student.address" name="x5" required>
+        <label>Address</label>
+      </div>
+      <div class="field">
+        <input type="text" [(ngModel)]="student.email" name="x6" required>
+        <label>Email</label>
+      </div>
+      <div class="field">
+        <input type="password" [(ngModel)]="student.password" name="x7" required>
+        <label>Password</label>
+      </div>
+      <br>
+
+      <div class="field">
+        <input type="submit" value="SignUp">
+      </div>
+      <div class="signup-link">Already registered? <a [routerLink]="['/Login']">Login now</a></div>
+
+    </form>
+  </div>
+</div>
+
+
