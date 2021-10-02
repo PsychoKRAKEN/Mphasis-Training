@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="st1" class="student">  
+<constructor-arg value="Ajay"></constructor-arg> 
+<constructor-arg value="171" type="int"></constructor-arg> 
+<constructor-arg value="Delhi"></constructor-arg> 
+<constructor-arg value="A+"></constructor-arg> 
+</bean> 
+<bean id="st2" class="student">  
+<constructor-arg value="Nishchal"></constructor-arg> 
+<constructor-arg value="172" type="int"></constructor-arg> 
+<constructor-arg value="Pune"></constructor-arg> 
+<constructor-arg value="A++"></constructor-arg> 
+</bean>   
+
+<bean id="obj1" class="student">  
+<property name="name" value="Ajay"></property> 
+<property name="rollno" value="171"></property> 
+<property name="address" value="Delhi"></property> 
+<property name="grade" value="A+"></property> 
+</bean>  
+  
+<bean id="obj2" class="student">  
+<property name="name" value="Nishchal"></property> 
+<property name="rollno" value="172"></property> 
+<property name="address" value="Pune"></property> 
+<property name="grade" value="A++"></property> 
+</bean>   
+  
+</beans>  

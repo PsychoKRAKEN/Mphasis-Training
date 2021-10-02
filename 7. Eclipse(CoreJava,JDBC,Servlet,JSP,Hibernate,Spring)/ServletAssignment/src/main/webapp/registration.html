@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script>
+
+	function calc()
+	{
+		var n1=parseInt(document.getElementById('n1').value);
+		var n2=parseInt(document.getElementById('n2').value);
+		
+		document.getElementById('result').value=n1+n2;
+	}
+</script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand active" href="Homepage.html">MyCompany</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="home.html">Home</a>
+        </li>
+        <!-- 
+        <li class="nav-item">
+          <a class="nav-link active" href="registration.html">Registration</a>
+        </li>
+        -->
+        
+        <li class="nav-item">
+          <a class="nav-link disabled active" href="#" tabindex="-1" aria-disabled="true">Employee Registration</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div id="mainid">
+
+<div class="wrapper">
+
+<form class="container-sm" action="employeeservlet">
+  <div class="mb-3 field">
+    <input type="text" class="form-control" name="t1">
+    <label for="empid" class="form-label">Employee ID</label>
+  </div>
+  
+  <div class="mb-3 field">
+    <input type="text" class="form-control" name="t2">
+    <label for="name" class="form-label">Name</label>
+  </div>
+  
+  <div class="mb-3 field">
+    <input type="text" class="form-control" name="t3">
+    <label for="address" class="form-label">Address</label>
+  </div>
+ 
+  <div class="mb-3 field">
+    <input type="text" class="form-control" name="t4">
+    <label for="dept" class="form-label">Department</label>
+  </div>
+  
+  <div class="mb-3 field">
+    <input type="text" class="form-control" name="t5" id="n1">
+    <label for="salary" class="form-label">Salary</label>
+  </div>
+  
+  <div class="mb-3 field">
+    <input type="text" class="form-control" name="t6" id="n2" >
+    <label for="ob" class="form-label">Other Benefits</label>
+  </div>
+  
+  <div class="mb-3 field">
+    <input type="text" class="form-control" name="t7" id="result" onclick="calc()" >
+    <label for="gross" class="form-label" >Gross</label>
+  </div>
+  
+  
+  <button type="submit" class="btn btn-primary" value="Insert" name="button">Insert</button>
+  <button type="submit" class="btn btn-primary" value="Update" name="button">Update</button>
+  <button type="submit" class="btn btn-primary" value="Delete" name="button">Delete</button>
+  <button type="submit" class="btn btn-primary" value="Select" name="button">Show</button>
+</form>
+
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+
+</body>
+</html>
