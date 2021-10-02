@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+    <style>
+        input:focus
+        {
+            background-color:red;
+        }
+
+        #mainbody{
+            background-color: rgba(35, 63, 95, 0.76);
+        }
+
+        #head1{
+            text-align: center;
+            background-color: aliceblue;
+        }
+
+        .head3{
+            text-align: center;
+            background-color: rgb(72, 104, 133);
+            color: red;
+        }
+
+
+        .head2{
+            text-align: center;
+            background-color: rgb(212, 19, 19);
+            color: rgb(0, 0, 0);
+        }
+
+
+        .bcolor{
+            background-color: antiquewhite;
+        }
+
+        .b2color{
+            background-color: rgb(14, 0, 0);
+        }
+
+
+        .b3color{
+            background-color: yellow;
+        }
+
+
+        .fontcolor{
+            color: blue;
+        }
+
+        .font2color{
+            color: rgb(243, 10, 10);
+        }
+
+
+        .font3color{
+            color: rgb(48, 184, 202);
+        }
+
+
+        .column {
+            float: left;
+            width: 32%;
+            padding: 10px;
+            
+        }
+
+        .column1 {
+            float: left;
+            width: 49%;
+            padding: 7px;
+            
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #div1{
+            background-image: url('back3.jpg');
+            background-repeat: no-repeat;
+            background-repeat: repeat-y;
+            background-repeat: repeat-x;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        fieldset{
+            border: 3px solid rgb(240, 7, 7);
+            width: 400px;
+            margin: 0 auto;
+            color: blue;
+        }
+
+        #para{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+
+
+
+    </style>
+</head>
+<body id="mainbody" background="back2.jpg">
+
+    <h1 id="head1">Welcome To Mphasis</h1>
+    <marquee width="100%" class="bcolor fontcolor">  
+        Mphasis Limited is an IT services company based in Bangalore, India.   
+    </marquee>
+
+    <h2 class="head3">OUR APPROACH</h2>
+
+    <p id="para" class="font3color b3color">
+        <span style="color: rgb(255, 0, 0);"> At Mphasis, engineering is in our DNA.</span> We lead with design and architecture to deliver a portfolio of next-generation offerings and services that blend our deep domain expertise with <span style="color: rgb(255, 0, 0);">cutting-edge technology.</span> Our domain contextualized offerings are embedded in deep tech and we are powered forward by the Mphasis Tribes and Squads model. Our cross-functional teams are focused on evolving our next-generation offerings. The Mphasis Way of engagement helps us build and scale faster. This enables us to bring the 'T' back into IT, with T standing not just for technology, but also for transformation combined with a strong understanding of your business domain. Guided by the Mphasis Front2BackTM approach, we create hyper-personalized experiences and drive customer-centric transformation.
+    </p>
+
+
+    <hr>
+
+    <div id="div1">
+        <div class="row">
+            <div class="column">
+                <h3 class="head2">Mphasis Front2Back™ Approach</h3>
+                <p class="font2color b2color">Mphasis adopts a customer-in view to transform enterprises using our industry-specific X2C2TM framework, which utilizes the power of cloud and cognitive to provide hyper-personalized digital experiences to clients and end customers.</p>
+            </div>
+            <div class="column">
+                <h3 class="head2">Service Transformation</h3>
+                <p class="font2color b2color">Mphasis Service Transformation solutions offer an integrated approach to enable enterprises to achieve scalable, digital, future-ready operations.</p>
+            </div>
+            <div class="column">
+                <h3 class="head2">Innovation</h3>
+                <p class="font2color b2color">At Mphasis we have a relentless and unwavering focus on innovation. We endeavor to apply innovation to business and help generate value and constantly challenge ourselves and work, to accelerate the next paradigms of innovation.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h1 class="head3">POWERED BY CLOUD AND COGNITIVE</h1>
+
+    <div class="row">
+        <div class="column1">
+            <img src="01.jpg" alt="Sorry Image not Available" class="center" height="300">
+        </div>
+        <div class="column1">
+            <img src="02.jpg" alt="Sorry Image not Available" class="center" height="300">
+        </div>
+    </div>
+
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 class="head3">USER REGISTER</h2>
+
+    <fieldset>  
+        <legend>User REGISTER:</legend>  
+        <label>Enter user name</label><br>  
+        <input type="text" name="fname"><br>  
+        <label>Enter your password</label><br>  
+        <input type="password" name="lname"><br> 
+        <label>Gender</label><br>  
+        <select name="gender">
+            <option value="Male">India</option>
+            <option value="Female">Nepal</option>
+            <option value="Other">Tibet</option>
+        </select><br><br> 
+        <label>contact number</label><br>  
+        <input type="text" name="email"><br><br> 
+        <label>Country</label><br>  
+        <input type="text" list="countrylist" name="country">
+        <datalist id="countrylist">
+            <option value="India"></option>
+            <option value="Nepal"></option>
+            <option value="Tibet"></option>
+            <option value="Bhutan"></option>
+            <option value="Pakistan"></option>
+        </datalist><br><br>  
+        <label>age</label><br>  
+        <input type="text" name="age"><br><br> 
+        <label>Enter your email</label><br>  
+        <input type="text" name="email"><br><br> 
+        <label><input type="submit" value="submit" /></label><br>
+        <label><input type="reset" value="reset" /></label><br>
+        
+     </fieldset><br> 
+</body>
+</html>

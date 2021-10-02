@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to JQuery</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h3>JQuery Examples By Sandip</h3>
+<input type="text" name="one" id="one"/>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#one").keydown(function(){
+$(this).css("background-color","pink");
+});
+$("#one").keyup(function(){
+$(this).css("background-color","grey");
+});
+$("#one").focus(function(){
+$(this).css("background-color","yellow");
+});
+$("#one").blur(function(){
+$(this).css("background-color","red");
+});
+});
+</script>
+</body>
+</html>

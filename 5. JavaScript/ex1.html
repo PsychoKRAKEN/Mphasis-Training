@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Example</title>
+    <script>
+
+        let name=confirm("18+");
+        if(name)
+        {
+            console.log("access the site");
+        }
+        else
+        {
+            console.log("Cant access");
+        }
+
+
+
+        function addfunction()
+        {
+            var a=prompt("Enter a number");
+            var b=prompt("Enter another number");
+
+            var c = parseInt(a)+parseInt(b);
+
+            alert(c);
+        }
+        function subfunction()
+        {
+            var a=prompt("Enter a number");
+            var b=prompt("Enter another number");
+
+            var c = parseInt(a)-parseInt(b);
+
+            alert(c);
+        }
+        function mulfunction()
+        {
+            var a=prompt("Enter a number");
+            var b=prompt("Enter another number");
+
+            var c = parseInt(a)*parseInt(b);
+
+            alert(c);
+        }
+        function divfunction()
+        {
+            var a=prompt("Enter a number");
+            var b=prompt("Enter another number");
+
+            var c = parseInt(a)/parseInt(b);
+
+            alert(c);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" name="Submit" value="Add a Number" onclick="addfunction()">
+    <input type="button" name="Submit" value="Sub a Number" onclick="subfunction()">
+    <input type="button" name="Submit" value="Mul a Number" onclick="mulfunction()">
+    <input type="button" name="Submit" value="Div a Number" onclick="divfunction()">
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><script> 
+$(document).ready(function(){
+    
+    $("#left").click(function(){
+        $("div").animate({left: '100px'});
+    });
+$("#right").click(function(){
+        $("div").animate({left: '1000px'},"slow");
+    });});
+    </script></head><body>
+<button id="left">Start Animation left</button>
+<button id="right">Start Animation right</button>
+<div style="background:#98bf21;height:200px;width:200px;position:absolute;"><h1>Hello Mounika</div></body>
+</html>

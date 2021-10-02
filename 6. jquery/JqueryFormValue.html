@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$("button.get-name").click(function()
+{ var name=$("#name").val();
+alert(name);
+document.write("the name is "+document.getElementById("name").value);
+});
+
+$("button.get-comment").click(function()
+{ var comment=$("#comment").val();
+alert(comment);
+document.write("the comment is "+document.getElementById("comment").value);
+});
+
+$("button.get-remark").click(function()
+{ var remark=$("#remark").val();
+alert(remark);
+document.write("the remark is "+document.getElementById("remark").value);
+});
+
+$("button.get-gender").click(function()
+{ var gender=$("input[name=gender]:checked").val();
+if(gender)
+{
+alert(gender);
+document.write("the gender is "+gender);
+}
+});
+
+});
+</script>
+</head>
+<form>
+<table>
+<tr><td>Enter your name:<td><input type=text id="name"></tr>
+<tr><td>Enter your comment:<td><textarea rows=4 cols=40 id="comment"></textarea></tr>
+<tr><td>Enter your remark:<td><select id="remark">
+<option>Good</option>
+<option>Very Good</option>
+<option>Bad</option>
+<option>Very Bad</option>
+</select></tr>
+<tr><td>Enter your Gender:<td><input type=radio name=gender value=male>Male<input type=radio name=gender value=female>Female</tr>
+<tr><td><td><button type="button" class="get-name">Get Name</button>
+<button type="button" class="get-comment">Get Comment</button>
+<button type="button" class="get-remark">Get Remark</button>
+<button type="button" class="get-gender">Get Gender</button></tr>
+</table>
+</form>
+</html>
+
+

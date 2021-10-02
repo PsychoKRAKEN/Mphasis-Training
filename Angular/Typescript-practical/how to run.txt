@@ -1,0 +1,11 @@
+1)npm install -g typescript@latest
+Example-1
+
+1. Create a new TypeScript file
+"welcome.ts"
+ console.log("Welcome to TypeScript");
+ console.log("Hello ! World");
+2. Compile in Terminal
+>tsc welcome.ts
+3. Run the JavaScript file
+>node welcome.js

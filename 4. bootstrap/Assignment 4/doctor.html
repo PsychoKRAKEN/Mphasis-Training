@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Bootstrap Basics</title>
+</head>
+
+<body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <div class="alert alert-info" role="alert">
+        <h1 style="text-align: center;">COVID-19 HELPDESK</h1>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="cowinlogo.jpg" alt="Image not found" width="200" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="symp.html" target="_self">Symptom Checker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guid.html" target="_self">Helpline</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Register
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="vaccine.html">For Vaccination</a></li>
+                            <li><a class="dropdown-item" href="ambulance.html">For Ambulance</a></li>
+                            <li><a class="dropdown-item" href="bed.html">For Bed</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="doctor.html" target="_self">Doctor Availability</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="alert alert-danger" role="alert">
+        <h2 style="text-align: center;">Doctor Availability in Your Area</h2>
+    </div>
+
+    <div>
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="0"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect>
+                                <text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">
+                                    <img src="doctor.jpg">
+                                </text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <h4>ABC Doctor</h4>
+                                    <p>
+                                        MBBS, MS - General Surgery, DNB - General Surgery, MCh - Minimal Access Surgery
+                                        Laparoscopic Surgeon, Bariatric Surgeon, Proctologist, General Surgeon, Diabetic Foot Surgeon, General Physician</p>
+                                </p>
+                                <b>10 Years Experience Overall  (4 years as specialist)</b>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Take
+                                            Appointment</button>
+                                    </div>
+                                    <small class="text-muted">Available</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="0"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect>
+                                <text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">
+                                    <img src="doctor.jpg">
+                                </text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <h4>ABC Doctor</h4>
+                                    <p>
+                                        MBBS, MS - General Surgery, DNB - General Surgery, MCh - Minimal Access Surgery
+                                        Laparoscopic Surgeon, Bariatric Surgeon, Proctologist, General Surgeon, Diabetic Foot Surgeon, General Physician</p>
+                                </p>
+                                <b>10 Years Experience Overall  (4 years as specialist)</b>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Take
+                                            Appointment</button>
+                                    </div>
+                                    <small class="text-muted">Available</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="0"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect>
+                                <text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">
+                                    <img src="doctor.jpg">
+                                </text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <h4>ABC Doctor</h4>
+                                    <p>
+                                        MBBS, MS - General Surgery, DNB - General Surgery, MCh - Minimal Access Surgery
+                                        Laparoscopic Surgeon, Bariatric Surgeon, Proctologist, General Surgeon, Diabetic Foot Surgeon, General Physician</p>
+                                </p>
+                                <b>10 Years Experience Overall  (4 years as specialist)</b>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Take
+                                            Appointment</button>
+                                    </div>
+                                    <small class="text-muted">Available</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="0"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect>
+                                <text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">
+                                    <img src="doctor.jpg">
+                                </text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <h4>ABC Doctor</h4>
+                                    <p>
+                                        MBBS, MS - General Surgery, DNB - General Surgery, MCh - Minimal Access Surgery
+                                        Laparoscopic Surgeon, Bariatric Surgeon, Proctologist, General Surgeon, Diabetic Foot Surgeon, General Physician</p>
+                                </p>
+                                <b>10 Years Experience Overall  (4 years as specialist)</b>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Take
+                                            Appointment</button>
+                                    </div>
+                                    <small class="text-muted">Available</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="0"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect>
+                                <text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">
+                                    <img src="doctor.jpg">
+                                </text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <h4>ABC Doctor</h4>
+                                    <p>
+                                        MBBS, MS - General Surgery, DNB - General Surgery, MCh - Minimal Access Surgery
+                                        Laparoscopic Surgeon, Bariatric Surgeon, Proctologist, General Surgeon, Diabetic Foot Surgeon, General Physician</p>
+                                </p>
+                                <b>10 Years Experience Overall  (4 years as specialist)</b>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Take
+                                            Appointment</button>
+                                    </div>
+                                    <small class="text-muted">Available</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="0"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect>
+                                <text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">
+                                    <img src="doctor.jpg">
+                                </text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <h4>ABC Doctor</h4>
+                                    <p>
+                                        MBBS, MS - General Surgery, DNB - General Surgery, MCh - Minimal Access Surgery
+                                        Laparoscopic Surgeon, Bariatric Surgeon, Proctologist, General Surgeon, Diabetic Foot Surgeon, General Physician</p>
+                                </p>
+                                <b>10 Years Experience Overall  (4 years as specialist)</b>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Take
+                                            Appointment</button>
+                                    </div>
+                                    <small class="text-muted">Available</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>

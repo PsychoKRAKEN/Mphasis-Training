@@ -1,0 +1,31 @@
+input:focus
+        {
+            background-color:red;
+        }
+
+fieldset{
+    color: green;
+}
+
+fieldset td{
+    color: black;
+}
+
+td {
+    width:200px;
+    padding-right:300px;
+    
+}
+
+input{
+    float:left;
+    border-color: green;
+}
+
+div{
+    margin-left: 50%;
+}
+
+#demo1{
+    color: rgb(131, 122, 122);
+}

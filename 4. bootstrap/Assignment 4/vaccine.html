@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Bootstrap Basics</title>
+</head>
+
+<body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <div class="alert alert-info" role="alert">
+        <h1 style="text-align: center;">COVID-19 HELPDESK</h1>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="cowinlogo.jpg" alt="Image not found" width="200" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="symp.html" target="_self">Symptom Checker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guid.html" target="_self">Helpline</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Register
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item active" href="vaccine.html">For Vaccination</a></li>
+                            <li><a class="dropdown-item" href="ambulance.html">For Ambulance</a></li>
+                            <li><a class="dropdown-item" href="bed.html">For Bed</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="doctor.html" target="_self">Doctor Availability</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="mt-3 container-fluid">
+        <form name="f1" action=second.jsp method=post>
+            <div class="mb-3">
+                <label for="name11" class="form-label">Name</label>
+                <input type="text" name=t1 class="form-control" id="name" onkeyup="myFunction()">
+            </div>
+
+            <div class="mb-3">
+                <label for="aadhar1" class="form-label">Aadhar Card Number</label>
+                <input type="number" class="form-control" name=t2 id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your Aadhar Card Number with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Upload Aadhar Card Photo</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+
+
+            <div class="col-12 mb-3">
+                <label for="inputAddress" class="form-label">Nearest Government Hospital</label>
+                <input type="text" name=t3 class="form-control" id="inputAddress" >
+            </div>
+            <div class="col-12 mb-3">
+                <label for="inputAddress2" class="form-label">Nearest Private Hospital</label>
+                <input type="text" name=t4 class="form-control" id="inputAddress2" >
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" name=t5 class="form-control" id="inputCity" >
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Postal Code</label>
+                <input type="text" name=t6 class="form-control" id="inputZip">
+            </div>
+
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="button" value="Submit" class="btn btn-primary" onclick="fun()">Submit</button>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("name");
+            x.value = x.value.toUpperCase();
+        }
+
+
+        function fun() {
+            var a = f1.t1.value;
+            var b = f1.t2.value;
+            var c = f1.t3.value;
+            var d = f1.t4.value;
+            var e = f1.t5.value;
+            var f = f1.t6.value;
+
+            if (a == "") {
+                alert("Enter your name");
+                f1.t1.focus();
+            }
+            else if (b == "") {
+                alert("Enter your Aadhar Card Number");
+                f1.t2.focus();
+            }
+            else if (c == "") {
+                alert("Enter your Nearest Government Hospital Name");
+                f1.t3.focus();
+            }
+            else if (d == "") {
+                alert("Enter your Nearest Private Hospital Name");
+                f1.t4.focus();
+            }
+            else if (e == "") {
+                alert("Enter your City Name");
+                f1.t5.focus();
+            }
+            else if (f == "") {
+                alert("Enter your Postal Code");
+                f1.t6.focus();
+            }
+            else {
+                alert("data submited successfully");
+                f1.submit();
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
